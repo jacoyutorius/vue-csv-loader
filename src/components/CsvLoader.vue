@@ -42,7 +42,7 @@ import Encoding from "encoding-japanese";
 import "bulma/css/bulma.css";
 
 export default {
-  name: "CsvToTable",
+  name: "CsvLoader",
   props: {
     headerRowCountLabelText: {
       type: String,

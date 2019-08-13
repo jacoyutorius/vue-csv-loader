@@ -5,7 +5,12 @@
   "description": "Vue component to load CSV",
   "author": "jacoyutorius",
   "license": "MIT",
-  "main": "./src/main.js",
+  "main": "dist/csv-loader.umd.js",
+  "module": "dist/csv-loader.esm.js",
+  "unpkg": "dist/csv-loader.min.js",
+  "browser": {
+    "./sfc": "src/csv-loader.vue"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jacoyutorius/vue-csv-loader"
@@ -13,7 +18,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name csv-loader ./src/main.js"
   },
   "dependencies": {
     "bulma": "^0.7.5",
