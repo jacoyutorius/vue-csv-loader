@@ -1,6 +1,6 @@
 {
   "name": "vue-csv-loader",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "description": "Vue component to load CSV",
   "author": "jacoyutorius",
@@ -30,7 +30,12 @@
     "lint": "vue-cli-service lint",
     "build-bundle": "vue-cli-service build --target lib --name csv-loader ./src/main.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "core-js": "^2.6.5",
+    "encoding-japanese": "^1.0.29",
+    "vue": "^2.6.10"
+  },
   "peerDependencies": {
     "bulma": "^0.7.5",
     "core-js": "^2.6.5",
