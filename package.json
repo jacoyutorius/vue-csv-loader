@@ -1,6 +1,6 @@
 {
   "name": "vue-csv-loader",
-  "version": "0.1.0",
+  "version": "0.0.4",
   "private": false,
   "description": "Vue component to load CSV",
   "author": "jacoyutorius",
