@@ -1,29 +1,11 @@
 # vue-csv-loader
 
-## Project setup
-```
-yarn install
-```
+Vue component to load CSV.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+[![Image from Gyazo](https://i.gyazo.com/338e9c39b1fee39db63343c586b392b7.gif)](https://gyazo.com/338e9c39b1fee39db63343c586b392b7)
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## emit
 
-### Run your tests
+```html
+<csv-loader v-on:loadSuccess="loadSuccess"></csv-loader>
 ```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

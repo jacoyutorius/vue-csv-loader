@@ -1,7 +1,15 @@
 {
   "name": "vue-csv-loader",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Vue component to load CSV",
+  "author": "jacoyutorius",
+  "license": "MIT",
+  "main": "./src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacoyutorius/vue-csv-loader"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

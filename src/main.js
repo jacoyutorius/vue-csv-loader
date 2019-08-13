@@ -1,8 +1,6 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import CsvLoader from "./components/CsvLoader.vue";
 
-Vue.config.productionTip = false
+Vue.component("csv-loader", CsvLoader);
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export { CsvLoader };
