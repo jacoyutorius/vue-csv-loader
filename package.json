@@ -11,6 +11,9 @@
   "browser": {
     "./sfc": "src/csv-loader.vue"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jacoyutorius/vue-csv-loader"
