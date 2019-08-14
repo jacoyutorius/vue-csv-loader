@@ -8,7 +8,13 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input id="headerRowCount" class="input" type="number" v-model="headerRowCount" />
+              <input
+                id="headerRowCount"
+                class="input"
+                type="number"
+                min="0"
+                v-model="headerRowCount"
+              />
             </div>
           </div>
         </div>
@@ -44,6 +50,11 @@ import "bulma/css/bulma.css";
 export default {
   name: "CsvLoader",
   props: {
+    defaultHeaderRowCount: {
+      type: Number,
+      default: 0,
+      required: false
+    },
     headerRowCountLabelText: {
       type: String,
       default: "Header Rows count",
@@ -60,9 +71,13 @@ export default {
       required: false
     }
   },
+  created: function() {
+    this.headerRowCount = this.defaultHeaderRowCount;
+  },
   data() {
     return {
       headerRowCount: 0,
+      labelHeaderRowCount: "",
       fileName: ""
     };
   },

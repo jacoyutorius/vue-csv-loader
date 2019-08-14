@@ -1,7 +1,17 @@
 <template>
   <div id="app">
     <section>
-      <csv-loader v-on:loadSuccess="loadSuccess"></csv-loader>
+      <h1>Vue CSV Loader</h1>
+    </section>
+
+    <section>
+      <csv-loader
+        v-on:loadSuccess="loadSuccess"
+        :defaultHeaderRowCount="2"
+        headerRowCountLabelText="CSVヘッダー"
+        uploadButtonLabelText="CSVファイル"
+        uploadButtonText="ファイルを選択"
+      ></csv-loader>
     </section>
 
     <section class="table-container">

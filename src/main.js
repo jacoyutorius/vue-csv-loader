@@ -26,3 +26,9 @@ if (GlobalVue) {
 
 // (npm/webpack 等で) モジュールとして利用させるためコンポーネントを export する
 export default CsvLoader;
+
+// import Vue from 'vue'
+// import App from './App.vue'
+// new Vue({
+//   render: h => h(App),
+// }).$mount('#app')
